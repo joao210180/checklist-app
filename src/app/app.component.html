@@ -2,6 +2,40 @@
 <app-header></app-header>
 
 <h1>Corpo da aplicacao </h1>
+<div class="main-container">
+
+    <mat-sidenav-container>
+
+        <mat-sidenav #sidenav>
+      
+            <mat-list class="w-10">
+                <mat-list-item>
+                   <a href="/"> <mat-icon>  Home </mat-icon>  </a>
+ 
+                </mat-list-item>
+                <mat-list-item>Item 2</mat-list-item>
+                <mat-list-item>Item 3</mat-list-item>
+              </mat-list>
+              
+
+        </mat-sidenav>
 
 
+        <mat-sidenav-content>
+            <p><mat-checkbox [(ngModel)]="opened">sidenav.opened</mat-checkbox></p>
+            <p><button mat-button (click)="sidenav.toggle()">sidenav.toggle()</button></p>
+            <p>Events:</p>
+            <div class="example-events">
+                <div *ngFor="let e of events">{{ e }}</div>           
+              
+            </div>
+        </mat-sidenav-content>
+
+    </mat-sidenav-container>
+
+
+     
+<router-outlet></router-outlet>
+
+</div>
 <app-footer></app-footer>

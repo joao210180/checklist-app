@@ -8,7 +8,7 @@ import { FormsModule } from '@angular/forms';
 
 import { TestComponent } from './test/test.component';
 import { HeaderComponent } from './header/header.component';
-import { MaterialModule } from './material.module';
+import { MaterialModule } from './material.module'; // Importe o MaterialModule
 import { FooterComponent } from './footer/footer.component';
 
 
@@ -24,7 +24,7 @@ import { FooterComponent } from './footer/footer.component';
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule // Adicione o MaterialModule aqui
   ],
   providers: [],
   bootstrap: [AppComponent]
