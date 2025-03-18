@@ -1,16 +1,19 @@
-
-<app-header></app-header>
-
-<h1>Corpo da aplicacao </h1>
 <div class="main-container">
+
+    <app-header [sidenav]="sidenav"></app-header>
 
     <mat-sidenav-container>
 
-        <mat-sidenav #sidenav>
+        <mat-sidenav class="w-10p" #sidenav>
       
-            <mat-list class="w-10p">
-                <mat-list-item>
-                   <a href="/"><mat-icon>home</mat-icon></a> 
+            <mat-list>
+                <mat-list-item (click)="sidenav.toggle()">
+                    <mat-icon>home</mat-icon>
+                    
+                    <span class="mt15">
+                      <a href="/">Home</a>
+                    </span>
+                
                 </mat-list-item>
                 <mat-list-item>Item 2</mat-list-item>
                 <mat-list-item>Item 3</mat-list-item>
@@ -21,20 +24,20 @@
 
 
         <mat-sidenav-content>
-            <p><mat-checkbox [(ngModel)]="opened">sidenav.opened</mat-checkbox></p>
-            <p><button mat-button (click)="sidenav.toggle()">sidenav.toggle()</button></p>
-            <p>Events:</p>
-            <div class="example-events">
-                <div *ngFor="let e of events">{{ e }}</div>           
-              
-            </div>
+            <h1>Testando</h1>
+            <h1>Corpo da aplicacao </h1>
+            
+            <router-outlet></router-outlet>
+
         </mat-sidenav-content>
 
     </mat-sidenav-container>
 
 
      
-<router-outlet></router-outlet>
+
+
+<app-footer></app-footer>
 
 </div>
-<app-footer></app-footer>
+

@@ -10,6 +10,8 @@ import { TestComponent } from './test/test.component';
 import { HeaderComponent } from './header/header.component';
 import { MaterialModule } from './material.module'; // Importe o MaterialModule
 import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { FooterComponent } from './footer/footer.component';
     AppComponent,
     TestComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
