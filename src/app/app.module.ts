@@ -8,8 +8,11 @@ import { FormsModule } from '@angular/forms';
 
 import { TestComponent } from './test/test.component';
 import { HeaderComponent } from './header/header.component';
-import { MaterialModule } from './material.module';
+import { MaterialModule } from './material.module'; // Importe o MaterialModule
 import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { CategoryComponent } from './category/category.component';
 
 
 @NgModule({
@@ -17,14 +20,17 @@ import { FooterComponent } from './footer/footer.component';
     AppComponent,
     TestComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent,
+    PageNotFoundComponent,
+    CategoryComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule // Adicione o MaterialModule aqui
   ],
   providers: [],
   bootstrap: [AppComponent]
