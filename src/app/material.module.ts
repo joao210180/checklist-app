@@ -7,6 +7,7 @@ import { FooterComponent } from './footer/footer.component';
 import { MatSidenavModule } from '@angular/material/sidenav'; // Importe o MatSidenavModule
 import { MatCheckboxModule } from '@angular/material/checkbox'; // Importe o MatCheckboxModule
 import {MatListModule} from '@angular/material/list';
+import {MatDividerModule} from '@angular/material/divider';
 
 @NgModule({
 
@@ -21,7 +22,8 @@ import {MatListModule} from '@angular/material/list';
     FormsModule,
     MatSidenavModule, // Adicione o MatSidenavModule aqui
     MatCheckboxModule, // Adicione o MatCheckboxModule aqui
-    MatListModule
+    MatListModule,
+    MatDividerModule
   ],
 
   exports: [
@@ -32,7 +34,8 @@ import {MatListModule} from '@angular/material/list';
     //FooterComponent
     MatSidenavModule, // Exporte o MatSidenavModule aqui
     MatCheckboxModule, // Exporte o MatCheckboxModule aqui
-    MatListModule
+    MatListModule,
+    MatDividerModule
   ],
 
 })

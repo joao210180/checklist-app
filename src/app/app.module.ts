@@ -12,6 +12,7 @@ import { MaterialModule } from './material.module'; // Importe o MaterialModule
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { CategoryComponent } from './category/category.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    CategoryComponent
   ],
   imports: [
     BrowserModule,

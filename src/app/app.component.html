@@ -7,16 +7,22 @@
         <mat-sidenav class="w-10p" #sidenav>
       
             <mat-list>
-                <mat-list-item (click)="sidenav.toggle()">
-                    <mat-icon>home</mat-icon>
-                    
+                <mat-list-item>
+                    <mat-icon>home</mat-icon>                    
                     <span class="mt15">
-                      <a href="/">Home</a>
-                    </span>
-                
+                      <a [routerLink]="['/']" (click)="sidenav.toggle()">Home</a>
+                    </span>                
                 </mat-list-item>
-                <mat-list-item>Item 2</mat-list-item>
-                <mat-list-item>Item 3</mat-list-item>
+
+                <mat-divider> </mat-divider>
+
+                <mat-list-item>
+                    <mat-icon>list</mat-icon>                    
+                    <span class="mt15">
+                      <a [routerLink]="['/categoria']" (click)="sidenav.toggle()">Categoria</a>
+                    </span>                
+                </mat-list-item>    
+
               </mat-list>
               
 
