@@ -2,12 +2,12 @@ import { NgModule } from '@angular/core';
 import {MatToolbarModule  } from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
-import { FormsModule } from '@angular/forms';
-import { FooterComponent } from './footer/footer.component';
 import { MatSidenavModule } from '@angular/material/sidenav'; // Importe o MatSidenavModule
-import { MatCheckboxModule } from '@angular/material/checkbox'; // Importe o MatCheckboxModule
 import {MatListModule} from '@angular/material/list';
 import {MatDividerModule} from '@angular/material/divider';
+import {MatCardModule} from '@angular/material/card';
+import {MatTableModule} from '@angular/material/table';
+import { Component } from '@angular/core';
 
 @NgModule({
 
@@ -19,23 +19,25 @@ import {MatDividerModule} from '@angular/material/divider';
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
-    FormsModule,
     MatSidenavModule, // Adicione o MatSidenavModule aqui
-    MatCheckboxModule, // Adicione o MatCheckboxModule aqui
     MatListModule,
-    MatDividerModule
+    MatDividerModule,
+    MatCardModule,
+  
+    MatButtonModule
   ],
 
   exports: [
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
-    FormsModule,
-    //FooterComponent
     MatSidenavModule, // Exporte o MatSidenavModule aqui
-    MatCheckboxModule, // Exporte o MatCheckboxModule aqui
     MatListModule,
-    MatDividerModule
+    MatDividerModule,
+    MatCardModule,
+    MatTableModule,
+    MatButtonModule
+  
   ],
 
 })

@@ -8,3 +8,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .mt15{
     margin-left: 15px;
 }
+.w-100{
+    width: 100%;
+}
+.m-20{
+    margin: 50px;
+}
